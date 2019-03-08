@@ -1,0 +1,41 @@
+
+/**
+ * Simulates a civilian warning message based on a ricther scale reading
+ *
+ * @LMAD
+ * @3/8
+ */
+import java.util.Scanner;
+public class RicthterScale
+{
+    public static void main(String[] args)
+    {
+        //Simulate a random number between one and 10
+        int quakeLevel = (int) (Math.random() * 10 + 1);
+        
+        //print a five different warning messages based on the quakeLevel
+        System.out.println("Hey! Earthquake level " + quakeLevel + " is coming ");
+        
+        if(quakeLevel < 3)
+        
+        {
+        System.out.println("No danger here you good. ");
+        }
+        else if (quakeLevel < 5)
+        {
+        System.out.println("ehhhhhh a little bit of danger but youll be aight. ");
+        }
+        else if (quakeLevel < 7)
+        {
+        System.out.println("Somewhat scary earthquake coming, not the worst but you can probably evacuate. ");
+        }
+        else if (quakeLevel < 9)
+        {
+        System.out.println("Very large earthquake coming, evacuate! ");
+        }
+        else
+        {
+        System.out.println("DANGER DANGER, WORST POSSIBLE EARTHQUAKE COMING EVACUATE NOW ");
+        }
+    }
+}
